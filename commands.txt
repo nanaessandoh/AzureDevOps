@@ -1,0 +1,8 @@
+// Create a template Solution
+dotnet new sln --name SimpleAPISln
+
+// Add Project name to Solution files 
+dotnet sln .\SimpleAPISln.sln.sln add .\src\SimpleAPI\SimpleAPI.csproj .\test\SimpleAPI.Test\SimpleAPI.Test.csproj
+
+// Add reference of SimpleAPI to SimpleAPI.Test
+dotnet add .\test\SimpleAPI.Test\SimpleAPI.Test.csproj reference .\src\SimpleAPI\SimpleAPI.csproj

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jwkgCQbSdt42Q6ztA3TAVqpGVzuE2/R7vliuYj/zC8SKLu+qNAEKsbwQBxaoLwxVDxmhDZg85g9Q9Eyqqx9FJg==",
+  "dgSpecHash": "e6m81uK7sViiHiI1d7s9/zdiacAVZwRWzk6UtRrGEGx849Ndsul/FNkRW8ScAh6FsVE0KI8wieCNlXW7Vufksg==",
   "success": true,
   "projectFilePath": "D:\\AzureDevOps\\test\\SimpleAPI.Test\\SimpleAPI.Test.csproj",
   "expectedPackageFiles": [

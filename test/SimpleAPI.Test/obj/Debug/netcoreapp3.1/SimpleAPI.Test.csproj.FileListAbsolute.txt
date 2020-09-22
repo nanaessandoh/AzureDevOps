@@ -94,3 +94,9 @@ D:\AzureDevOps\test\SimpleAPI.Test\obj\Debug\netcoreapp3.1\SimpleAPI.Test.csproj
 D:\AzureDevOps\test\SimpleAPI.Test\obj\Debug\netcoreapp3.1\SimpleAPI.Test.dll
 D:\AzureDevOps\test\SimpleAPI.Test\obj\Debug\netcoreapp3.1\SimpleAPI.Test.pdb
 D:\AzureDevOps\test\SimpleAPI.Test\obj\Debug\netcoreapp3.1\SimpleAPI.Test.genruntimeconfig.cache
+D:\AzureDevOps\test\SimpleAPI.Test\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\AzureDevOps\test\SimpleAPI.Test\bin\Debug\netcoreapp3.1\appsettings.json
+D:\AzureDevOps\test\SimpleAPI.Test\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\AzureDevOps\test\SimpleAPI.Test\bin\Debug\netcoreapp3.1\SimpleAPI.exe
+D:\AzureDevOps\test\SimpleAPI.Test\bin\Debug\netcoreapp3.1\SimpleAPI.dll
+D:\AzureDevOps\test\SimpleAPI.Test\bin\Debug\netcoreapp3.1\SimpleAPI.pdb
