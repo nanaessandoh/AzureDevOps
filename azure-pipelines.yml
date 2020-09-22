@@ -18,29 +18,39 @@ steps:
 
 # Restore Dependencies
 - task: DotNetCoreCLI@2
+  displayName: Restore Dependencies
   inputs:
     command: 'restore'
     feedsToUse: 'select'
 
 # Build the Project
 - task: DotNetCoreCLI@2
-  displayName: Build
+  displayName: Build Project
   inputs:
     command: build
     projects: '**/*.csproj'
 
 # Run your Test
 - task: DotNetCoreCLI@2
+  displayName: Run Test
   inputs:
     command: test
     projects: '**/*Tests/*.csproj'
-    arguments: '--configuration $(buildConfiguration)'
+    arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
 
 
+# Package your Code
+- task: DotNetCoreCLI@2
+  displayName: 'Publish Code --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+  inputs:
+    command: publish
+    publishWebProjects: false
+    projects: 'src/SimpleAPI/SimpleAPI.csproj'
+    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: true
 
-
-
-# Run Your Tests
+- task: PublishBuildArtifacts@1
+  displayName: 'publish artifacts'
 
 
 
