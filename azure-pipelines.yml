@@ -14,20 +14,21 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
-# Restore Dependencies
 steps:
+
+# Restore Dependencies
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
     feedsToUse: 'select'
 
 # Build the Project
-steps:
 - task: DotNetCoreCLI@2
   displayName: Build
   inputs:
     command: build
-    projects: '**/*.csproj'
+    projects: '**/*src/*.csproj'
+
 
 
 # Run Your Tests
