@@ -29,6 +29,15 @@ steps:
     command: build
     projects: '**/*.csproj'
 
+# Run your Test
+- task: DotNetCoreCLI@2
+  inputs:
+    command: test
+    projects: '**/*Tests/*.csproj'
+    arguments: '--configuration $(buildConfiguration)'
+
+
+
 
 
 # Run Your Tests
