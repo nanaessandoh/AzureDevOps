@@ -27,7 +27,7 @@ steps:
   displayName: Build
   inputs:
     command: build
-    projects: '**/*src/*.csproj'
+    projects: '**/*.csproj'
 
 
 # Run Your Tests
